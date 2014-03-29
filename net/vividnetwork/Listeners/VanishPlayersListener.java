@@ -20,9 +20,9 @@ public class VanishTorchListener implements Listener{
     
     public VividNetwork plugin;
 
-	  	public VanishTorchListener(VividNetwork plugin){
-		   	this.plugin = plugin;
-	  	}
+    public VanishTorchListener(VividNetwork plugin){ 
+    	this.plugin = plugin;
+     }
 		
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent e) {
