@@ -17,7 +17,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 
 public class AntiMoveListener extends JavaPlugin implements Listener{
-	
+
 	public VividNetwork plugin;
 
 	public JoinLeaveListener(VividNetwork plugin) {
