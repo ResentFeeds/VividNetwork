@@ -20,11 +20,12 @@ public class HReloadCommand implements CommandExecutor {
 	  if(sender instanceof Player){
 		Player player = (Player) sender;
 
-		if(label.equalsIgnoreCase("hreload")){
-			if(player.hasPermission("hub.reload")) {
+	             if(player.hasPermission("hub.reload")) {
+				if(label.equalsIgnoreCase("hreload")){
 			plugin.reloadConfig();
 			sender.sendMessage(ChatColor.GREEN + "Successfully Reloaded!");
 		}
+				
 		}else{
 			player.sendMessage(ChatColor.RED+"VividNetwork does not know this command… oh no.");
 		}
