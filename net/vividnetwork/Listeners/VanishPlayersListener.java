@@ -1,3 +1,5 @@
+package net.vividnetwork.VividNetwork.Listeners;
+
 import net.vividnetwork.VividNetwork;
 
 import org.bukkit.Bukkit;
@@ -12,16 +14,16 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
  
-import java.util.logging.Logger;
- 
 
-public class VanishTorch extends JavaPlugin implements Listener{
-    Logger log = Bukkit.getLogger();
-    public void onEnable() {
-        log.info("Plugin enabled!");
-        Bukkit.getPluginManager().registerEvents(this, this);
-        return;
-    }
+public class VanishTorchListener implements Listener{
+    
+    
+    public VividNetwork plugin;
+
+	  	public VanishTorchListener(VividNetwork plugin){
+		   	this.plugin = plugin;
+	  	}
+		
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent e) {
         if (e.getPlayer().hasPermission("vanishtorch.use")) {
