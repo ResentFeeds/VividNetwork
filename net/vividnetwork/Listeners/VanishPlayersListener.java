@@ -30,7 +30,7 @@ public class VanishTorchListener implements Listener{
             if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK) {
                 if (e.getItem().getType() == Material.MAGMA_CREAM) {
                     Player player = e.getPlayer();
-                    for (Player other : getServer().getOnlinePlayers()) {
+                    for (Player other : plugin.getServer().getOnlinePlayers()) {
                         player.hidePlayer(other);
                         player.playSound(player.getLocation(), Sound.ANVIL_LAND, 10, 1);
                         player.getInventory().remove(new ItemStack(Material.MAGMA_CREAM));
@@ -42,7 +42,7 @@ public class VanishTorchListener implements Listener{
                 }
                 if (e.getItem().getType() == Material.SLIME_BALL) {
                     Player player = e.getPlayer();
-                    for (Player other : getServer().getOnlinePlayers()) {
+                    for (Player other : plugin.getServer().getOnlinePlayers()) {
                         player.showPlayer(other);
                         player.playSound(player.getLocation(), Sound.ANVIL_BREAK, 10, 1);
                         player.getInventory().remove(new ItemStack(Material.SLIME_BALL));
