@@ -20,7 +20,7 @@ public class AntiMoveListener implements Listener{
 
 	public VividNetwork plugin;
 
-	public JoinLeaveListener(VividNetwork plugin) {
+	public AntiMoveListener(VividNetwork plugin) {
 		this.plugin = plugin;
 	}
 	@EventHandler
