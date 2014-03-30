@@ -1,3 +1,5 @@
+package net.vividnetwork;
+
 import net.vividnetwork.Commands.HReloadCommand;
 import net.vividnetwork.Commands.WebsiteCommand;
 import net.vividnetwork.Listeners.DoubleJumpListener;
