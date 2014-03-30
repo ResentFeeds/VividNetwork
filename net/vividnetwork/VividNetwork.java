@@ -3,6 +3,7 @@ import net.vividnetwork.Listeners.DoubleJumpListener;
 import net.vividnetwork.Listeners.DropListener;
 import net.vividnetwork.Listeners.JoinLeaveListener;
 import net.vividnetwork.Listeners.VanishTorchListener;
+import net.vividnetwork.Listeners.AntiMoveListener;
 
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginDescriptionFile;
@@ -17,6 +18,7 @@ public class VividNetwork extends JavaPlugin{
 			getServer().getPluginManager().registerEvents(new DropListener(this), this);
 			getServer().getPluginManager().registerEvents(new DoubleJumpListener(this), this);
 			getServer().getPluginManager().registerEvents(new VanishTorchListener(this), this);
+			getserver().getPluginManager().registerEvents(new AntiMoveListener(this), this);
 			//Commands
 			getCommand("hreload").setExecutor(new HReloadCommand(this));
 			PluginDescriptionFile pdfFile = this.getDescription();
