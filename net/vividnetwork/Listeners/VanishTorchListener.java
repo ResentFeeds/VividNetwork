@@ -24,7 +24,7 @@ public class VanishTorchListener implements Listener{
     	this.plugin = plugin;
      }
 		
-    @EventHandler
+     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event){
     	if(!(event.getPlayer().hasPermission("vanishtorch.use")))
     		return;
