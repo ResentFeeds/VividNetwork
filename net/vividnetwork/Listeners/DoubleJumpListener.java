@@ -1,4 +1,4 @@
-import net.vividnetwork.VividNetwork;
+import net.vividnetwork.Listeners;
 
 import org.bukkit.GameMode;
 import org.bukkit.Material;
