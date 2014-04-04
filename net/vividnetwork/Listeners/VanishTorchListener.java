@@ -1,4 +1,4 @@
-package net.vividnetwork.VividNetwork.Listeners;
+package net.vividnetwork.Listeners;
 
 import net.vividnetwork.VividNetwork;
 
