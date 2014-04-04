@@ -1,3 +1,7 @@
+package net.vividnetwork.Listeners;
+
+import net.vividnetwork.VividNetwork;
+
 public class DropListener implements Listener {
 	
 	public VividNetwork plugin;
