@@ -26,7 +26,6 @@ public class VividNetwork extends JavaPlugin{
 			getserver().getPluginManager().registerEvents(new AntiMoveListener(this), this);
 			//Commands
 			getCommand("hreload").setExecutor(new HReloadCommand(this));
-			getCommand("report").setExecutor(new ReportCommand(this));
 			getCommand("vote").setExecutor(new VoteCommand(this));
 		        getCommand("website").setExecutor(new WebsiteCommand(this));
 			PluginDescriptionFile pdfFile = this.getDescription();
