@@ -3,7 +3,6 @@ package net.vividnetwork;
 import net.vividnetwork.Commands.HReloadCommand;
 import net.vividnetwork.Commands.ReportCommand;
 import net.vividnetwork.Commands.VoteCommand;
-import net.vividnetwork.Commands.WarnCommand;
 import net.vividnetwork.Commands.WebsiteCommand;
 import net.vividnetwork.Listeners.DoubleJumpListener;
 import net.vividnetwork.Listeners.DropListener;
@@ -27,7 +26,6 @@ public class VividNetwork extends JavaPlugin{
 			getserver().getPluginManager().registerEvents(new AntiMoveListener(this), this);
 			//Commands
 			getCommand("hreload").setExecutor(new HReloadCommand(this));
-			getCommand("warn").setExecutor(new WarnCommand(this));
 			getCommand("report").setExecutor(new ReportCommand(this));
 			getCommand("vote").setExecutor(new VoteCommand(this));
 		        getCommand("website").setExecutor(new WebsiteCommand(this));
