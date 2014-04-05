@@ -4,10 +4,7 @@ version: 1.0
 commands: 
   hreload:
    description: Reloads the hub!
-
-permission:
-hub.reload: op
-
-hub.bypass: op
-
-dropperevent.allowdrop: op
+  vote:
+   description: gives you a link so you can vote!
+  website:
+   description: gives you the website link!
