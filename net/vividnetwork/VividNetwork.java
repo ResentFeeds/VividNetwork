@@ -19,27 +19,28 @@ public class VividNetwork extends JavaPlugin{
 
 		@Override
 		public void onEnable() {
-			//Listeners			
-			getServer().getPluginManager().registerEvents(new JoinLeaveListener(this), this);
-			getServer().getPluginManager().registerEvents(new DropListener(this), this);
-			getServer().getPluginManager().registerEvents(new DoubleJumpListener(this), this);
-			getServer().getPluginManager().registerEvents(new VanishTorchListener(this), this);
-			getserver().getPluginManager().registerEvents(new AntiMoveListener(this), this);
-			//Commands
-			getCommand("hreload").setExecutor(new HReloadCommand(this));
-			getCommand("vote").setExecutor(new VoteCommand(this));
-		        getCommand("website").setExecutor(new WebsiteCommand(this));
-			PluginDescriptionFile pdfFile = this.getDescription();
-	           	List<String> authors = pdfFile.getAuthors();
-			System.out.println("[VividNetwork] "+  pdfFile.getVersion()  + " By " + authors +" is Enabled!");
-			saveConfig();
+		//Listeners			
+		getServer().getPluginManager().registerEvents(new JoinLeaveListener(this), this);
+		getServer().getPluginManager().registerEvents(new DropListener(this), this);
+		getServer().getPluginManager().registerEvents(new DoubleJumpListener(this), this);
+		getServer().getPluginManager().registerEvents(new VanishTorchListener(this), this);
+		getserver().getPluginManager().registerEvents(new AntiMoveListener(this), this);
+		//Commands
+		getCommand("hreload").setExecutor(new HReloadCommand(this));
+		getCommand("vote").setExecutor(new VoteCommand(this));
+    	        getCommand("website").setExecutor(new WebsiteCommand(this));
+		PluginDescriptionFile pdfFile = this.getDescription();
+	        List<String> authors = pdfFile.getAuthors();
+		System.out.println("[VividNetwork] "+  pdfFile.getVersion()  + " By " + authors +" is Enabled!");
+		saveConfig();
 		}
 		
 
 		@Override
 		public void onDisable(){
-			PluginDescriptionFile pdfFile = this.getDescription();
-			System.out.println("[VividNetwork] "+pdfFile.getVersion()+" is Disabled!");
-			saveConfig();
+	        PluginDescriptionFile pdfFile = this.getDescription();
+		List<String> authors = pdfFile.getAuthors();
+	  	System.out.println("[VividNetwork] "+  pdfFile.getVersion()  + " By " + authors +" is Disabled!");
+		saveConfig();
 		}
 }
