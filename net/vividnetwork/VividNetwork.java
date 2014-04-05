@@ -1,5 +1,6 @@
 package net.vividnetwork;
 
+import java.util.List;
 import net.vividnetwork.Commands.HReloadCommand;
 import net.vividnetwork.Commands.ReportCommand;
 import net.vividnetwork.Commands.VoteCommand;
@@ -29,7 +30,8 @@ public class VividNetwork extends JavaPlugin{
 			getCommand("vote").setExecutor(new VoteCommand(this));
 		        getCommand("website").setExecutor(new WebsiteCommand(this));
 			PluginDescriptionFile pdfFile = this.getDescription();
-			System.out.println("[VividNetwork] "+pdfFile.getVersion()+" is Enabled!");
+	           	List<String> authors = pdfFile.getAuthors();
+			System.out.println("[VividNetwork] "+  pdfFile.getVersion()  + " By " + authors +" is Enabled!");
 			saveConfig();
 		}
 		
