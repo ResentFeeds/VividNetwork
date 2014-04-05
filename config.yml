@@ -1,0 +1,8 @@
+SpeedStrength: 8
+JumpStrength: 2
+X: 25
+Y: 25
+Z: 25
+Multiplier: 0.15
+SetY: 8
+Subtract: 4
